@@ -1,0 +1,113 @@
+.featured-tours {
+    text-align: center;
+    padding: 2rem;
+}
+
+.tours-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.tour-card {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+}
+
+.tour-card img {
+    width: 100%;
+    height: auto;
+}
+
+.price-tag {
+    position: absolute;
+    bottom: 15rem;
+    left: 0rem;
+    background-color: rgb(94, 218, 94);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.tour-info {
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px; /* Задаємо висоту для рівномірного розподілу */
+}
+
+.rate-and-reviews {
+    display: flex;
+    align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 12.5rem;
+    margin-right: 1rem; /* Додано відступ між рейтингом та відгуками */
+}
+
+.reviews {
+    font-size: 1rem;
+    color: #999;
+}
+
+.days-duration {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.calendar-icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem; /* Розмір іконки календаря */
+}
+
+.see-all-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.discount {
+    color: white; /* Білий колір для тексту знижки */
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: line-through; /* Перехреслений текст */
+}
